@@ -1,237 +1,90 @@
 <!doctype html>
-<html lang="en" >
+<html lang="en">
 
 <head>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Joshua Burlison</title>
-	
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css">
-	<link rel="stylesheet" type="text/css" href="about.css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	
-	<style>
-	
-		#sitewrapper{
-			width: 1300px;
-			height: 100%;
-			padding-left: 0px;
-			padding-top: 3px;
-			padding-right: auto;
-			margin: 0 auto 0 auto;
-			
-		}
-		
-		body{
-			background-image:url('myImgs/castle.jpg');
-			background-size: cover;
-			background-repeat:no-repeat;
-			background-attachment:fixed;
-			background-position:center center; 
-		}
-	
-			
-		#myName{
-			color: #707070;
-			text-shadow: 5px 4px 0 #eee,7px 6px 0 #707070;
-			font-size: 60px;
-			position: relative; 
-			left: 820px; 
-			top: 30px;
-		}
-		
-		
-		
-		
-		.glass {
-    		display: block;
-    		height: 75%;
-    		width: 75%;
-    		background-color: white;
-    		background-size: cover;
-    		opacity: 0.6;
-    		-webkit-border-radius: 6px;
-     		-moz-border-radius: 6px;
-         border-radius: 6px;
-         margin-top: 80px; 
-         margin-bottom: 80px;
-         margin-left: 150px; 
-         margin-right: 100px;
-		}
-		
-		
-		
-		.tab-wrapper { display:block; position: relative;}
-		
-    	.tab-wrapper ul.tab-title { 
-    		clear:both; 
-    		width: 90%; 
-    		font-size: 25px; 
-    		margin-left: 5%; 
-    	}
-    	
-    	.tab-wrapper ul.tab-title li { 
-    		float:right; 
-    		display: block; 
-    		text-align: center; 
-    		cursor: pointer; 
-    		background: #333; 
-    		color:#CCC; 
-    		padding-bottom: 5px;
-    		padding-top: 5px;
-    		padding-left: 20px;
-    		padding-right:20px;
-    	}
-    	
-    	.tab-wrapper ul.tab-title li.active { background-color: white; color: black;}
-    	.tab-wrapper ul.tab-title li:hover { background: #CCC; color:#333; }
-    	.tab-wrapper ul.tab-title li span { }
-    	
-		.tab-wrapper .tab-container { clear:both; float:left; width: 90%;  margin-left: 5%; text-align: center;}
-    	.tab-wrapper .tab-container > div { display:none; border-top: 1px solid #111; border-right: 1px solid #111;}
-    	.tab-wrapper .tab-container > div.active { display:block; }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" />
 
-	
-	</style>
-		
-	
-	<script>
-		$(function() {
-			
-  			$( "#myName" ).mouseover(function() {
-  				$( this ).css( "top", "35px" );
-  				$( this ).css( "color", "transparent" );
-  				$( this ).css( "text-shadow", "-9px 0 5px rgba(0,0,0,0.3), 9px 0 5px rgba(0,0,0,0.3), -21px 0 5px rgba(0,0,0,0.1), 21px 0 5px rgba(0,0,0,0.1), 0 0 0 rgba(0,0,0,0.1)" );
-  			});
-  			
-  			$( "#myName" ).mouseout(function() {
-  				$( this ).css( "top", "30px" );
-  				$( this ).css( "color", "#707070" );
-  				$( this ).css( "text-shadow", "5px 4px 0 #eee,7px 6px 0 #707070" );
-  			});
-  			
-  			$( "#myName" ).mousedown(function() {
-  				$( this ).css( "top", "40px" );
-  				$( this ).css( "color", "#707070" );
-  				$( this ).css( "text-shadow", "5px 4px 0 #eee,7px 6px 0 #707070" );
-  			});
-  		
-  			$( "#myName" ).mouseup(function() {
-  				$( this ).css( "top", "35px" );
-  				$( this ).css( "color", "#707070" );
-  				$( this ).css( "text-shadow", "5px 4px 0 #eee,7px 6px 0 #707070" );
-  			});
-   		
-  			//$( "#myName" ).click(function() {
-  				//alert("My Nigga");
-  			//});
-  			
-  			//Tabs
-			$(document).ready(function(){
-    			$('.tab-wrapper ul li').click( function() {
-        			$('.tab-wrapper ul li').removeClass('active');
-        			$('.tab-wrapper .tab-container div').removeClass('active');
-        			var className = $(this).attr('class');
-        			$(this).addClass('active');
-        			$('.tab-wrapper .tab-container').find('div.'+className).addClass('active');
-    			});
-			});  			
-  			
-  			
-  			
-  		
-  		});
-	</script>
+    <title>Joshua Burlison</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="MyName.js"></script>
+
 </head>
 
 <body>
-<div id="sitewrapper">
-	<h1 id="myName" title="Click to Download Resume PDF" >Joshua Burlison</h1>
 
-	<div class="glass">
-	
-		<br></br>
-		
-		<div class="tab-wrapper">
- 			<ul class="tab-title">
- 				<li class="tab3"><span>Work Experience</span></li>
- 				<li class="tab2"><span>Development Skills</span></li>
-      		<li class="tab1 active"><span>About Myself</span></li>
-        		
-        		
-    		</ul>
-    
-			<div class="tab-container">
-     			<div class="tab1 active">
-     			
-     				<br></br>
-					     			
-     				<p>Myself</p>
-     			
-     				<br></br>
-     				<br></br>
-     				<br></br>
-     				<br></br>
-     				<br></br>
-     			
-     			
-     			</div>
-      		<div class="tab2">
-      		
-      			<p>Dev Skills</p>
-      		
-      			<br></br>
-     				<br></br>
-     				<br></br>
-     				<br></br>
-     				<br></br>
-      		
-      		
-      		
-      		
-      		</div>
-      		<div class="tab3">
-      		
-      			<p>Work Experience</p>
-      			
-      			<br></br>
-     				<br></br>
-     				<br></br>
-     				<br></br>
-     				<br></br>
-      			
-      			
-      			
-      		</div>
- 			</div>
-		</div>
-		
-		
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
 
-	</div>
-</div>
+
+    <div class="row-fluid">
+        <h1 id="myName" class="span4 offset7" title="Click to Download Resume PDF">Joshua Burlison</h1>
+    </div>
+
+    <div class="row-fluid">
+        <br></br>
+        <br></br>
+
+        <div id="glass" class="span8 offset2">
+
+            <br></br>
+
+            <div class="row-fluid">
+                <div class="span10 offset1">
+
+                    <div class="row">
+                        <div class="pull-right">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li class="active"><a href="#about_myself" role="tab" data-toggle="tab">About Myself</a>
+                                </li>
+                                <li><a href="#development_skills" role="tab" data-toggle="tab">Development Skills</a>
+                                </li>
+                                <li><a href="#work_experience" role="tab" data-toggle="tab">Work Experience</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="about_myself">About myself Ish</div>
+                        <div class="tab-pane fade" id="development_skills">My Development Skills</div>
+                        <div class="tab-pane fade" id="work_experience">My Work Experience</div>
+                    </div>
+
+
+
+
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,72 @@
+html, body {
+    background-image: url('myImgs/castle.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#myName {
+    color: #707070;
+    text-shadow: 5px 4px 0 #eee,7px 6px 0 #707070;
+    font-size: 60px;
+    position: relative;
+    top: 30px;
+}
+
+#glass {
+    display: block;
+    background-color: white;
+    background-size: cover;
+    opacity: 0.6;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.tab-wrapper {
+    display: block;
+    position: relative;
+}
+
+.tab-wrapper ul.tab-title {
+    clear: both;
+    font-size: 25px;
+}
+
+#tab1, #tab2, #tab3 {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background: #333;
+    color: #CCC;
+}
+
+#tab1.active, #tab2.active, #tab3.active {
+    background-color: white;
+    color: black;
+}
+
+.tab-wrapper ul.tab-title li:hover {
+   
+}
+
+.tab-wrapper ul.tab-title li span {
+}
+
+.tab-wrapper .tab-container {
+    clear: both;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.tab-wrapper .tab-container > div {
+    display: none;
+    border-top: 1px solid #111;
+    border-right: 1px solid #111;
+}
+
+.tab-wrapper .tab-container > div.active {
+    display: block;
+}
