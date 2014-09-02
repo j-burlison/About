@@ -20,7 +20,23 @@ html, body {
 	float: left;
 }
 
+.pic:hover {
+	border: solid 1px;
+}
+
+.clickable:hover{
+	-webkit-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.25);
+	box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.25);
+}
+
+.shadow-box {
+	border-radius: 6px;
+	border: 15px solid rgba(0, 0, 0, 0.3);
+}
+
 .abt-me-text {
+	line-height: 110%; 
 	text-align: center;
 	font-size: 130%;
 }
@@ -35,10 +51,15 @@ html, body {
 	margin-top: 10%;
 }
 
-#gittext {
-	margin-left: 34%; 
+.contact-text {
+	color: #0088cc;	
 	padding-bottom: 8%;
 	line-height: 90%;
+}
+
+.contact-text:hover {
+	color: #005580;
+	text-decoration: underline;
 }
 
 #glass-sm {
@@ -66,6 +87,7 @@ html, body {
 }
 
 .glass-lg-section {
+	text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
 	text-align: left;
 	position: relative;
     display: block;

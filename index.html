@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="en">
 
+
+<!--
+		TODO: 
+				1. Contact Form Modal
+				2. Abt Pics Into Modals
+				3. Abt Check-boxes
+				4. Download Resume On Name Click (Click to Download Resume PDF)
+				5. Finish "Professional" Section Text
+				6. Add "Professional" Section Photos w/ Links
+				7. Mobile Tweaks
+-->
+
 <head>
 
     <meta charset="utf-8">
@@ -26,26 +38,34 @@
 
 
     <div class="row-fluid">
-        <h1 id="myName" class="span4 offset7" title="Click to Download Resume PDF">Joshua Burlison</h1>
+        <h1 id="myName" class="span4 offset7" title="Joshua Burlison">Joshua Burlison</h1>
     </div>
     <div id="download_resume_mobile_note" class="row-fluid" style="display: none; position: relative; top: 35px;">
         <p class="span4 offset8">^Tap to Download Resume PDF^</p>
     </div>
 
+    
     <div id="glass-sm" class="span2 pull-left">
-
+    	<div >
         <a href="http://www.linkedin.com/pub/joshua-burlison/85/a08/3b7">
             <img id="linkedn" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Joshua Burlison's profile on LinkedIn">
         </a>
 
         <a style="opacity: 0.6;" href="https://github.com/j-burlison">
             <img id="octocat" src="myImgs/Octocat.jpg" width="120" border="0" alt="View Joshua Burlison's profile on GitHub">
-            <div id="gittext">
+            <div id="gittext" class="contact-text" style="margin-left: 34%;">
                 <p>My GitHub</p>
             </div>
         </a>
-
+        
+        
+        	<div id="emailtext" class="contact-text" style="margin-left: 14%;">
+        		<a href="mailto:josh1burlison@gmail.com" target="_top"><p>josh1burlison@gmail.com</p></a>
+        	</div>
+        
+        </div>
     </div>
+  
 
     <div class="row-fluid">
 
@@ -84,14 +104,50 @@
 
                                         <div class="row-fluid">
                                             <div class="span4 offset1">
-                                                <img id="myFace" src="myImgs/Professional.jpg" width="250" border="0">
+                                                <img id="myFace" src="myImgs/Professional.jpg" width="250" class="pic">
                                             </div>
 
-                                            <div class="span6 abt-me-text" style="margin-top: 10%;">
+                                            <div class="span6 abt-me-text" style="margin-top: 7%;">
                                                 <p>I like to think of myself as outgoing, personable, and kind.</p>
-                                                <br></br>
-                                                <p>I love movies, music, and have an appreciation for most forms of self expression.</p>
+                                                
+                                                
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                             <div class="row-fluid">
+                                <div class="span10 offset1" style="padding-top: 5%; font-size: 130%;">
+                                    <div class="glass-lg-section clickable">
+                                    <div data-toggle="collapse" data-parent="#accordion" href="#collapseMotto">
+                                    <div class="row-fluid">
+                                        	<div style="margin-top: 5%; margin-bottom: 5%;" class="span10 offset1">
+                                        	<img width="100%" style="border-radius: 5px;" src="myImgs/Motto.png" title="Click to see my motto"></img>
+                                        	
+                                        	</div>
+                                        	</div>
+                                    <div id="collapseMotto" class="collapse">
+                                        <div class="row-fluid">
+                                        	<div style="margin-top: 5%; margin-bottom: 5%;" class="span10 offset1 abt-me-text">
+                                        	<div class="shadow-box">
+                                            <p style="line-height: 110%; margin-top: 5%; margin-bottom: 5%; margin-left: 2%; margin-right: 2%;">I strive to maintain a balance between my obsession for perfection and an attempt to not take life too seriously.</p>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        <div class="row-fluid">
+                                        	<div class="span10 offset1 abt-me-text">
+                                        		<p>and of course...</p>
+                                        	</div>                                        
+                                        </div>
+                                        <div class="row-fluid">
+                                            <div style="margin-bottom: 5%; margin-top: 5%;" class="span10 offset1">
+                                                <img width="100%" style="border-radius: 5px;" src="myImgs/WorkHardPlayHard.png" title="Work Hard Play Hard"></img>
+                                                <br></br>
+                                                
+                                            </div>
+                                        </div>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -108,14 +164,14 @@
                                         <div class="row-fluid">
 
                                             <div class="span4 offset1">
-                                                <img title="Half Dome" src="myImgs/HalfDomeSelfie.jpg" width="250" border="0" style="border-radius: 5px;">
+                                                <img title="Half Dome" src="myImgs/HalfDomeSelfie.jpg" width="250" class="pic" style="border-radius: 5px;">
                                             </div>
                                             <div class="span6">
-                                                <img title="Costa Rica" src="myImgs/CostaRica.jpg" width="500" border="0" style="border-radius: 5px;">
+                                                <img title="Costa Rica" src="myImgs/CostaRica.jpg" width="500" class="pic" style="border-radius: 5px;">
                                             </div>
 
                                             <div class="span6">
-                                                <img title="Yosemite Valley" src="myImgs/YosemiteHor.jpg" width="500" border="0" style="border-radius: 5px; margin-top: 5%;">
+                                                <img title="Yosemite Valley" src="myImgs/YosemiteHor.jpg" width="500" class="pic" style="border-radius: 5px; margin-top: 5%;">
                                             </div>
 
                                         </div>
@@ -136,10 +192,10 @@
                                         <div class="row-fluid">
 
                                             <div class="span4 offset1">
-                                                <img width="250" border="0" style="border-radius: 5px;" src="myImgs/ParaJump.jpg" title="Half Dome" height="100"></img>
+                                                <img width="250" class="pic" style="border-radius: 5px;" src="myImgs/ParaJump.jpg" height="100"></img>
                                             </div>
                                             <div class="span6" style="margin-left: 8%;">
-                                                <img width="290" border="0" style="border-radius: 5px;" src="myImgs/MotoClass.jpg" title="Costa Rica"></img>
+                                                <img width="290" class="pic" style="border-radius: 5px;" src="myImgs/MotoClass.jpg"></img>
                                             </div>
 
                                         </div>
@@ -148,27 +204,14 @@
                                 </div>
                             </div>
 
-                            <div class="row-fluid">
-                                <div class="span10 offset1" style="padding-top: 5%; font-size: 110%;">
-                                    <div class="glass-lg-section">
-                                        <div class="row-fluid">
-                                            <div style="margin-bottom: 5%; margin-top: 5%;" class="span10 offset1">
-                                                <img width="100%" border="0" style="border-radius: 5px;" src="myImgs/WorkHardPlayHard.jpg" title="Costa Rica"></img>
-                                                <br></br>
-                                                <p>Though it might sound like a contradicting motto, I try to find a nice balance between an obsession for perfection and an attempt to not take life too seriously.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <br></br>
                         </div>
 
                         <div class="tab-pane fade" id="development_skills">
 
                             <div class="row-fluid">
-                                <div class="span10 offset1" style="padding-top: 5%; font-size: 130%;">
+                                <div class="span10 offset1" style="padding-top: 5%; font-size: 130%; line-height: 140%; ">
                                     <div class="glass-lg-section">
 
 
@@ -215,7 +258,7 @@
                             </div>
                             <div class="row-fluid">
                                 <div class="span10 offset1" style="padding-top: 5%; font-size: 130%;">
-                                    <div class="glass-lg-section" style="text-align: center;">
+                                    <div class="glass-lg-section" style="text-align: center; line-height: 140%;">
 
                                         <br></br>
 
@@ -235,21 +278,22 @@
                         <div class="tab-pane fade" id="work_experience">
 
                             <div class="row-fluid">
-                                <div class="span10 offset1" style="padding-top: 5%; font-size: 130%;">
-                                    <div class="glass-lg-section">
+                                <div class="span10 offset1" style="padding-top: 5%; font-size: 130%;  line-height: 140%;">
+                                    <div class="glass-lg-section clickable">
+                                    <div data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 
                                         <div class="row-fluid">
-                                            <div class="span4">
+                                            <div class="span4 offset1">
 
                                             </div>
 
-                                            <div class="span7" style="margin-top: 10%; margin-bottom: 2%;">
-                                                <div data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            <div class="span6" style="margin-top: 10%; margin-bottom: 2%;">
+                                                
                                                     <p>At uShip, I learned more in a single summer than I could sum on a this little web-page, but I'll do my best</p>
                                                     <p>Constant integration, dozens of pushes to production every day</p>
                                                     <p>Worked with a diverse team that was varied in age, experience, and skill sets</p>
                                                     <p>I was able to touch every layer of the stack including...
-                                                </div>
+                                                
                                             </div>
 
                                             <div class="row-fluid">
@@ -281,23 +325,40 @@
 
 
                                         </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row-fluid">
-                                <div class="span10 offset1" style="padding-top: 5%; font-size: 130%;">
-                                    <div class="glass-lg-section">
-
+                                <div class="span10 offset1" style="padding-top: 5%; font-size: 130%;  line-height: 140%;">
+                                    <div class="glass-lg-section clickable">
+                                    <div data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                                         <div class="row-fluid">
-                                            <div class="span4">
+                                            <div class="span4 offset1">
 
                                             </div>
 
-                                            <div class="span7" style="margin-top: 10%; margin-bottom: 10%;">
-
+                                            <div class="span6" style="margin-top: 10%; margin-bottom: 2%;">
+                                                
+                                                    <p>Worked with the incedent Management team</p>
+                                                    <p>Wrote a web application ontop of Service Now internal mgmt system</p>
+                                                    <p>Used java script, Ajax, html, and css</p>
+                                                    <p>The application...</p>
+                                                
                                             </div>
 
+
+                                            <div class="row-fluid">
+                                                <div class="span11 offset1" style="margin-bottom: 8%;">
+                                                    <div id="collapseTwo" class="collapse">
+                                                        kept track of on call incedent response teams and their members An Incedent Manager could select a team member and assign them to the current incendent The application would send out an invitation email to said team member The team member could then reply to that email to indicate their acceptance to the invitation After the invitation is sent out, the team member was thrown into a running que that kept track of all invited team members and their current status within the incident (invited, accepted, joined, dismissed, re-joined ect.) This running que was visible to the Incident manager via thee ui Each incident is represented in a DB form that held all of the Incident's metrics The queue and all of its activity was saved to an Icident Resonse DB form for later analitics
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
                                         </div>
                                     </div>
                                 </div>

@@ -10,6 +10,8 @@ $(function() {
 		$("#linkedn").css("margin-left", "25%");
 		$("#octocat").css("margin-left", "30%");
 		$("#gittext").css("margin-left", "38%");
+		$("#emailtext").css("margin-left", "25%");
+		$(".tab-content").css("border-right", "0px");
    }
 
 
