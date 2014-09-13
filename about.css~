@@ -59,6 +59,16 @@ html, body {
 	margin-top: 10%;
 }
 
+.contact {
+	display: none; 
+	top:10%; 
+	background-image: url(myImgs/PaperAir.jpg);
+	background-position: center;
+	background-size: cover;
+	text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
+	font-size: 130%;	
+}
+
 .contact-text {
 	color: #0088cc;	
 	padding-bottom: 8%;

@@ -4,10 +4,9 @@
 
 <!--
 		TODO: 
-				1. Contact Form Modal
-				2. Abt Check-boxes
-				3. Finish "Professional" Section Text
-				4. Mobile Tweaks
+				
+				2. Finish "Professional" Section Text
+				3. Mobile Tweaks
 -->
 
 <head>
@@ -60,6 +59,61 @@
                 </a>
             </div>
 
+            <div style="padding-bottom: 10%;">
+                <button type="button" class="btn btn-primary btn-lg" style="margin-left: 28%; padding-left: 10%; padding-right: 10%;" data-toggle="modal" data-target="#contactFormModal">Contact</button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="modal fade contact" id="contactFormModal" style="" aria-hidden="true">
+        <div class="modal-dialog">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">X</span>
+            </button>
+
+            <form action="feedback.php" method="post" style="padding-top: 5%; padding-bottom: 5%;">
+                <div id="contactForm">
+                    <table border="0" cellpadding="8" cellspacing="8">
+                        <tr>
+                            <td>
+                                <label for="tswname">Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="fullname" id="tswname" size="25" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="tswemail">Email address:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="tswemail" name="email" size="25" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="margin-left: 50%;">
+                                <label for="tswcomments">Comments:</label>
+                                <br />
+                                <textarea style="margin-left: 20%; width: 120%; resize: none;" rows="15" cols="45" name="comments" id="tswcomments"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+
+                                <button id="sendFeedback" type="submit" class="btn btn-primary btn-lg" value="Send Feedback" style="position: absolute; margin-left: 65%;">Send Feedback</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="thankYou" style="display: none; margin-left: 15%; margin-top: 5%;">
+                    <p>THANK YOU!</p>
+                </div>
+            </form>
+
+
         </div>
     </div>
 
@@ -101,33 +155,39 @@
 
                                         <div class="row-fluid">
                                             <div class="span4 offset1">
-                                                <img id="myFace" src="myImgs/Professional.jpg" width="350" class="pic" data-toggle="modal" data-target="#myFaceModal">
+                                                <img id="myFace" src="myImgs/Professional.jpg" width="300" class="pic" data-toggle="modal" data-target="#myFaceModal">
                                             </div>
 
                                             <div class="modal fade" id="myFaceModal" style="display: none; position: absolute; top:0%;" aria-hidden="true">
-                                                <div class="modal-dialog" >
+                                                <div class="modal-dialog">
 
                                                     <img class="pic-modal" src="myImgs/Professional.jpg">
                                                 </div>
                                             </div>
 
                                             <div class="span7 abt-me-text" style="margin-top: 7%;">
-                                                
+
                                                 <table style="text-align: left; margin-left: 5%; margin-top: 2%;">
-                                                	<tr>
-                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;"/>Outgoing</td>
-                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;"/>Fashionable</td>
-                                                	</tr>
-                                                	<tr>
-                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;"/>Personable</td>
-                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;"/>Receptive</td>
-                                                	</tr>
-                                                	<tr>
-                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;"/>Kind</td>
-                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Unchecked.png" style="width:20%; padding-right: 5%;"/>Modest</td>
-                                                	</tr>
+                                                    <tr>
+                                                        <td style="padding-bottom: 10%;">
+                                                            <img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;" />Outgoing</td>
+                                                        <td style="padding-bottom: 10%;">
+                                                            <img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;" />Fashionable</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-bottom: 10%;">
+                                                            <img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;" />Personable</td>
+                                                        <td style="padding-bottom: 10%;">
+                                                            <img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;" />Receptive</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-bottom: 10%;">
+                                                            <img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;" />Kind</td>
+                                                        <td style="padding-bottom: 10%;">
+                                                            <img src="myImgs/Unchecked.png" style="width:20%; padding-right: 5%;" />Modest</td>
+                                                    </tr>
                                                 </table>
-                                        
+
                                             </div>
                                         </div>
                                     </div>
@@ -322,10 +382,10 @@
                             <br></br>
                         </div>
                         <div class="tab-pane fade" id="work_experience">
-									
+
                             <div style="position: absolute; margin-top: 10%; margin-left: 10%; z-index: 10; width: 25%;">
                                 <a href="http://www.uship.com/" target="_blank">
-                                    <img class="pic-modal" src="myImgs/uShip.png"/>
+                                    <img class="pic-modal" src="myImgs/uShip.png" />
                                 </a>
                             </div>
 
@@ -383,7 +443,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div style="position: absolute; margin-top: 10%; margin-left: 10%; z-index: 10; width: 25%;">
                                 <a href="http://www.homedepot.com/" target="_blank">
                                     <img class="pic-modal" src="myImgs/THD.jpg">

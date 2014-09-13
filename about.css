@@ -20,6 +20,13 @@ html, body {
 	float: left;
 }
 
+#thankYou {
+	 color: #707070;
+    text-shadow: 5px 4px 0 #eee,7px 6px 0 #707070;
+    font-size: 60px;
+    position: relative;
+}
+
 .pic:hover {
 	border: solid 1px;
 }
@@ -57,6 +64,16 @@ html, body {
 #octocat {
 	margin-left: 22%;
 	margin-top: 10%;
+}
+
+.contact {
+	display: none; 
+	top:10%; 
+	background-image: url(myImgs/PaperAir.jpg);
+	background-position: center;
+	background-size: cover;
+	text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
+	font-size: 130%;	
 }
 
 .contact-text {
@@ -107,7 +124,6 @@ html, body {
 }
 
 .pic-modal {
-	z-index: 10;
     width: 100%; 
     height: 100%;
     border-radius: 6px;

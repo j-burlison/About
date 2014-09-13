@@ -1,4 +1,14 @@
 $(function() {
+	
+	if (typeof InstallTrigger !== 'undefined') {
+		$("#tswcomments").css("width", "70%");
+	}
+   
+	$("#sendFeedback").mousedown(function() {
+		$("#contactForm").css('display', 'none');
+		$("#thankYou").css('display', 'block');
+		
+   });   
    
    $("#myFaceModal").mousedown(function() {
 		$("#myFaceModal").modal('hide');
