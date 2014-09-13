@@ -7,8 +7,7 @@
 				1. Contact Form Modal
 				2. Abt Check-boxes
 				3. Finish "Professional" Section Text
-				4. Add "Professional" Section Photos w/ Links
-				5. Mobile Tweaks
+				4. Mobile Tweaks
 -->
 
 <head>
@@ -102,20 +101,33 @@
 
                                         <div class="row-fluid">
                                             <div class="span4 offset1">
-                                                <img id="myFace" src="myImgs/Professional.jpg" width="250" class="pic" data-toggle="modal" data-target="#myFaceModal">
+                                                <img id="myFace" src="myImgs/Professional.jpg" width="350" class="pic" data-toggle="modal" data-target="#myFaceModal">
                                             </div>
 
-                                            <div class="modal fade" id="myFaceModal" style="display: none; position: absolute;" aria-hidden="true">
-                                                <div class="modal-dialog" style="width: 100%;">
+                                            <div class="modal fade" id="myFaceModal" style="display: none; position: absolute; top:0%;" aria-hidden="true">
+                                                <div class="modal-dialog" >
 
                                                     <img class="pic-modal" src="myImgs/Professional.jpg">
                                                 </div>
                                             </div>
 
-                                            <div class="span6 abt-me-text" style="margin-top: 7%;">
-                                                <p>I like to think of myself as outgoing, personable, and kind.</p>
-
-
+                                            <div class="span7 abt-me-text" style="margin-top: 7%;">
+                                                
+                                                <table style="text-align: left; margin-left: 5%; margin-top: 2%;">
+                                                	<tr>
+                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;"/>Outgoing</td>
+                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;"/>Fashionable</td>
+                                                	</tr>
+                                                	<tr>
+                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;"/>Personable</td>
+                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;"/>Receptive</td>
+                                                	</tr>
+                                                	<tr>
+                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Checked.png" style="width:20%; padding-right: 5%;"/>Kind</td>
+                                                		<td style="padding-bottom: 10%;"><img src="myImgs/Unchecked.png" style="width:20%; padding-right: 5%;"/>Modest</td>
+                                                	</tr>
+                                                </table>
+                                        
                                             </div>
                                         </div>
                                     </div>
@@ -173,7 +185,7 @@
                                             <div class="span4 offset1">
                                                 <img title="Half Dome" src="myImgs/HalfDomeSelfie.jpg" width="250" class="pic" style="border-radius: 5px;" data-toggle="modal" data-target="#HalfDomeSelfieModal">
                                             </div>
-                                            <div class="modal fade" id="HalfDomeSelfieModal" style="display: none; position: absolute;" aria-hidden="true">
+                                            <div class="modal fade" id="HalfDomeSelfieModal" style="display: none; position: absolute;  top:0%;" aria-hidden="true">
                                                 <div class="modal-dialog" style="width: 100%;">
                                                     <img class="pic-modal" src="myImgs/HalfDomeSelfie.jpg">
                                                 </div>
@@ -182,7 +194,7 @@
                                             <div class="span6">
                                                 <img title="Costa Rica" src="myImgs/CostaRica.jpg" width="500" class="pic" style="border-radius: 5px;" data-toggle="modal" data-target="#CostaRicaModal">
                                             </div>
-                                            <div class="modal fade" id="CostaRicaModal" style="display: none; position: absolute;" aria-hidden="true">
+                                            <div class="modal fade" id="CostaRicaModal" style="display: none; position: absolute; top:0%;" aria-hidden="true">
                                                 <div class="modal-dialog" style="width: 100%;">
                                                     <img class="pic-modal" src="myImgs/CostaRica.jpg">
                                                 </div>
@@ -191,7 +203,7 @@
                                             <div class="span6">
                                                 <img title="Yosemite Valley" src="myImgs/YosemiteHor.jpg" width="500" class="pic" style="border-radius: 5px; margin-top: 5%;" data-toggle="modal" data-target="#YosemiteHorModal">
                                             </div>
-                                            <div class="modal fade" id="YosemiteHorModal" style="display: none; position: absolute;" aria-hidden="true">
+                                            <div class="modal fade" id="YosemiteHorModal" style="display: none; position: absolute; top:0%;" aria-hidden="true">
                                                 <div class="modal-dialog" style="width: 100%;">
                                                     <img class="pic-modal" src="myImgs/YosemiteHor.jpg">
                                                 </div>
@@ -217,7 +229,7 @@
                                             <div class="span4 offset1">
                                                 <img width="250" class="pic" style="border-radius: 5px;" src="myImgs/ParaJump.jpg" height="100" data-toggle="modal" data-target="#ParaJumpModal">
                                             </div>
-                                            <div class="modal fade" id="ParaJumpModal" style="display: none; position: absolute;" aria-hidden="true">
+                                            <div class="modal fade" id="ParaJumpModal" style="display: none; position: absolute; top:0%;" aria-hidden="true">
                                                 <div class="modal-dialog" style="width: 100%;">
                                                     <img class="pic-modal" src="myImgs/ParaJump.jpg">
                                                 </div>
@@ -226,7 +238,7 @@
                                             <div class="span6" style="margin-left: 8%;">
                                                 <img width="290" class="pic" style="border-radius: 5px;" src="myImgs/MotoClass.jpg" data-toggle="modal" data-target="#MotoClassModal">
                                             </div>
-                                            <div class="modal fade" id="MotoClassModal" style="display: none; position: absolute;" aria-hidden="true">
+                                            <div class="modal fade" id="MotoClassModal" style="display: none; position: absolute; top:0%;" aria-hidden="true">
                                                 <div class="modal-dialog" style="width: 100%;">
                                                     <img class="pic-modal" src="myImgs/MotoClass.jpg">
                                                 </div>
