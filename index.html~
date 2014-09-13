@@ -37,8 +37,8 @@
     <div class="row-fluid">
         <a href="Joshua_C_Burlison_Resume.doc" ><h1 id="myName" class="span4 offset7" title="Joshua Burlison">Joshua Burlison</h1></a>
     </div>
-    <div class="row-fluid" style="position: relative; top: 35px;">
-        <p id="download_resume_mobile_note" class="span4 offset8"></p>
+    <div id="download_resume_mobile_note" class="row-fluid" style="position: relative; top: 35px;">
+        <p class="span4 offset8">^^</p>
     </div>
 
 
