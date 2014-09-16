@@ -33,6 +33,10 @@ $(function() {
    $("#MotoClassModal").mousedown(function() {
 		$("#MotoClassModal").modal('hide');
    });
+   
+   $("#MyFamilyModal").mousedown(function() {
+		$("#MyFamilyModal").modal('hide');
+   });
 
 
 });

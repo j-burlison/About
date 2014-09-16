@@ -39,12 +39,6 @@ html, body {
 	border: solid 1px;
 }
 
-.clickable:hover{
-	-webkit-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
-	-moz-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
-	box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
-}
-
 .shadow-box {
 	border-radius: 6px;
 	border: 15px solid rgba(0, 0, 0, 0.3);
@@ -121,6 +115,12 @@ html, body {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+}
+
+.glass-lg-section:hover {
+-webkit-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
 }
 
 .pic-modal {

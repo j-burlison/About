@@ -5,7 +5,7 @@ $(function() {
 	}
    
 	$("#sendFeedback").mousedown(function() {
-		$("#myFaceModal").css('contactForm', 'none');
+		$("#contactForm").css('display', 'none');
 		$("#thankYou").css('display', 'block');
 		
    });   

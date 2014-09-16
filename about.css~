@@ -20,6 +20,13 @@ html, body {
 	float: left;
 }
 
+#thankYou {
+	 color: #707070;
+    text-shadow: 5px 4px 0 #eee,7px 6px 0 #707070;
+    font-size: 60px;
+    position: relative;
+}
+
 .pic:hover {
 	border: solid 1px;
 }
@@ -114,6 +121,12 @@ html, body {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+}
+
+.glass-lg-section:hover {
+-webkit-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
 }
 
 .pic-modal {
