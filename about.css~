@@ -39,12 +39,6 @@ html, body {
 	border: solid 1px;
 }
 
-.clickable:hover{
-	-webkit-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
-	-moz-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
-	box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
-}
-
 .shadow-box {
 	border-radius: 6px;
 	border: 15px solid rgba(0, 0, 0, 0.3);
@@ -128,6 +122,28 @@ html, body {
 	-moz-box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
 	box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
 }
+
+#collapseOneExpand {
+	text-indent: 34%;
+}
+
+.collapseExpand {
+	padding-bottom: 2%;
+}
+
+.collapseExpand:hover {
+	color: #005580;
+	text-decoration: underline;
+}
+
+.thin {
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 1px;
+	border: 0;
+	background-color: #333;
+	color: #333;
+} 
 
 .pic-modal {
     width: 100%; 

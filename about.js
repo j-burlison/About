@@ -37,6 +37,27 @@ $(function() {
    $("#MyFamilyModal").mousedown(function() {
 		$("#MyFamilyModal").modal('hide');
    });
+   
+   
+   $("#collapseOneExpand").mousedown(function() {
+   	if ($('#collapseOneText').text() == "Click To Expand Section"){
+   		$('#collapseOneText').text("Click To Collapse Section");
+   	}
+   	
+   	else {
+			$('#collapseOneText').text("Click To Expand Section");   	
+   	}
+   });
+   
+    $("#collapseTwoExpand").mousedown(function() {
+   	if ($('#collapseTwoText').text() == "Click To Expand Section"){
+   		$('#collapseTwoText').text("Click To Collapse Section");
+   	}
+   	
+   	else {
+			$('#collapseTwoText').text("Click To Expand Section");   	
+   	}
+   });
 
 
 });

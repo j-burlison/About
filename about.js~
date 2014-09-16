@@ -33,6 +33,31 @@ $(function() {
    $("#MotoClassModal").mousedown(function() {
 		$("#MotoClassModal").modal('hide');
    });
+   
+   $("#MyFamilyModal").mousedown(function() {
+		$("#MyFamilyModal").modal('hide');
+   });
+   
+   
+   $("#collapseOneExpand").mousedown(function() {
+   	if ($('#collapseOneText').text() == "Click To Expand Section"){
+   		$('#collapseOneText').text("Click To Collapse Section");
+   	}
+   	
+   	else {
+			$('#collapseOneText').text("Click To Expand Section");   	
+   	}
+   });
+   
+    $("#collapseOneExpand").mousedown(function() {
+   	if ($('#collapseOneText').text() == "Click To Expand Section"){
+   		$('#collapseOneText').text("Click To Collapse Section");
+   	}
+   	
+   	else {
+			$('#collapseOneText').text("Click To Expand Section");   	
+   	}
+   });
 
 
 });

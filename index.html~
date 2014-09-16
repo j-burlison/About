@@ -350,7 +350,7 @@
 
                                         <br></br>
 
-                                        <p style="text-indent: 5%;"><b>Languages:</b>
+                                        <p style="text-indent: 15%;"><b>Languages:</b> <b style="float: right; margin-right: 20%;">Personal Proficiency:</b>
                                         </p>
                                         <p style="line-height: 30%;">&nbsp</p>
                                         <p class="code" style="text-indent: 15%; border-radius: 5px;" title="75%">C
@@ -419,7 +419,7 @@
                             <div class="row-fluid">
                                 <div class="span10 offset1" style="padding-top: 5%; font-size: 130%;  line-height: 140%;">
                                     <div class="glass-lg-section">
-                                        <div data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        <div>
 
 
 
@@ -436,7 +436,7 @@
                                                      
                                                 </div>
                                                 
-                                                <div class="span10 offset1" style="margin-top: 2%; margin-bottom: 2%;">
+                                                <div class="span10 offset1" style="margin-top: 5%;">
 
                                                     <p style="text-indent: 5%;">Basically, if someone is in the Dev office, there is most likely being code pushed up. 
                                                      Even with the contentious integration, every piece of testable code first undergoes the scrupulous punishment of a top notch QA.</p>
@@ -448,7 +448,7 @@
                                                </div>
 
                                                 <div class="row-fluid">
-                                                    <div class="span10 offset1" style="margin-bottom: 8%; text-align: left;">
+                                                    <div class="span10 offset1" style="text-align: left; margin-top: 2%;">
                                                         <div id="collapseOne" class="collapse">
                                                             <table style="text-align: left;">
                                                                 <tr>
@@ -479,7 +479,12 @@
                                                            
                                                             <p><b>Projects:</b></p>
                                                             <p><u>Mobile Smartbanner for android and IOS:</u></p>
-                                                                <p style="text-indent: 5%;">Pulled smartbanner.js project into solution gutted and tweaked perfected scss to designers specifications</p>
+                                                                <p style="text-indent: 5%;">On this project, I got the opportunity to work alongside Moose & Squirrel’s UI wizard, 
+                                                                <a href="https://www.linkedin.com/profile/view?id=24916152&authType=NAME_SEARCH&authToken=rvqk&locale=en_US&trk=tyah2&trkInfo=tarId%3A1410893067426%2Ctas%3Abryson%2Cidx%3A1-1-1" target="_blank">Bryson Reynolds</a>,
+                                                                in an effort to increase mobile application adoption across uShip's user base. Together, he and I pulled the open sourced <a href="https://github.com/jasny/jquery.smartbanner" target="_blank">smartbanner.js</a> 
+                                                                project into our vast production solution. We then proceeded to gut, tweak, and perfect the associated jQuery and scss to our designers specifications. 
+                                                                MAS MAS MAS MAS
+                                                                </p>
                                                             
                                                             <br></br>
                                                             
@@ -503,6 +508,9 @@
 
 
                                             </div>
+                                            <div id="collapseOneExpand" class="collapseExpand" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            		<p class="thin"></p><p id="collapseOneText">Click To Expand Section</p><p class="thin"></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -517,7 +525,7 @@
                             <div class="row-fluid">
                                 <div class="span10 offset1" style="padding-top: 5%; font-size: 130%;  line-height: 140%;">
                                     <div class="glass-lg-section">
-                                        <div data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        <div>
                                             <div class="row-fluid">
                                                 <div class="span4">
                                                     <!--Home Depot Pic-->
@@ -531,6 +539,7 @@
                                                     <p>The application...</p>
 
                                                 </div>
+                                                </div>
 
 
                                                 <div class="row-fluid">
@@ -542,6 +551,9 @@
                                                 </div>
 
 
+                                            </div>
+                                            <div id="collapseOneExpand" class="collapseExpand" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                            		<p class="thin"></p><p id="collapseTwoText">Click To Expand Section</p><p class="thin"></p>
                                             </div>
                                         </div>
                                     </div>
