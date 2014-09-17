@@ -31,6 +31,8 @@
 
 <body>
 
+	<a href="#" class="back-to-top">Back to Top</a>
+
     <div class="row-fluid">
         <a href="Joshua_C_Burlison_Website_Resume_.pdf"><h1 id="myName" class="span4 offset7" title="Joshua Burlison">Joshua Burlison</h1></a>
     </div>
@@ -71,11 +73,11 @@
 
     <div class="modal fade contact" id="contactFormModal" style="" aria-hidden="true">
         <div class="modal-dialog">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">X</span>
+            <button type="button" class="close" data-dismiss="modal" style="margin-right: 1%; margin-top: 1%;"><span aria-hidden="true">x</span>
             </button>
-
+				<div id="contactForm">
             <form action="feedback.php" method="post" style="padding-top: 5%; padding-bottom: 5%;">
-                <div id="contactForm">
+                
                     <table border="0" cellpadding="8" cellspacing="8">
                         <tr>
                             <td>
@@ -103,19 +105,41 @@
                         <tr>
                             <td colspan="2">
 
-                                <button id="sendFeedback" type="submit" class="btn btn-primary btn-lg" value="Send Feedback" style="position: absolute; margin-left: 65%;">Send Feedback</button>
+                                <input id="sendFeedback" type="submit" value="Send Feedback" class="btn btn-primary btn-lg" style="position: absolute; margin-left: 65%;"/>
+                        
                             </td>
                         </tr>
                     </table>
-                </div>
-                <div id="thankYou" style="display: none; margin-left: 15%; margin-top: 5%;">
-                    <p>THANK YOU!</p>
-                </div>
+                
+                
             </form>
-
-
+            </div>
         </div>
     </div>
+    
+    <div id="thankYouModal" class="modal fade contact" style="display: none; margin-top: 10%;" aria-hidden="true">
+        <button type="button" class="close" data-dismiss="modal" style="margin-right: 1%; margin-top: 1%;"><span aria-hidden="true">x</span>
+            </button>
+        <div class="modal-dialog">
+            
+    <div class="thankYouOops"style=" margin-left: 15%; margin-top: 5%;">
+                    <p>THANK YOU!</p>
+                </div>
+                </div>
+                </div>
+                
+                
+     <div id="oopsModal" class="modal fade contact" style="height: 40%; display: none; margin-top: 10%;" aria-hidden="true">
+        <button type="button" class="close" data-dismiss="modal" style="margin-right: 1%; margin-top: 1%;"><span aria-hidden="true">x</span>
+            </button>
+        <div class="modal-dialog">
+            
+    <div class="thankYouOops"style="text-align: center; line-height: 80%; margin-top: 10%;">
+                    <p>OOPS!</p>
+                    <p>Sorry, contact form not processed.</p>
+                </div>
+                </div>
+                </div>
 
 
     <div class="row-fluid">
@@ -431,18 +455,20 @@
                                                 <div class="span6 offset1" style="margin-top: 10%;">
 
                                                     <p style="text-indent: 5%;">At uShip, I learned more in a single summer than I could sum on this little web-page, but I'll do my best.</p>
-                                                    <p>First off, uShip is a Continuous Integration and Agile Environment. Now when they say contentious, they very well mean it.
-                                                     Developers at uShip constantly merging new code with production with dozens of pushes every single day.</p>
+                                                    
+                                                     <p style="text-indent: 5%;">First off, uShip is a Continuous Integration and Agile Environment. Now when they I continuous, I very well mean it.
+                                                     Developers at uShip are constantly merging new code with production with dozens of pushes every single day.</p>
                                                      
                                                 </div>
                                                 
                                                 <div class="span10 offset1" style="margin-top: 5%;">
 
-                                                    <p style="text-indent: 5%;">Basically, if someone is in the Dev office, there is most likely being code pushed up. 
-                                                     Even with the contentious integration, every piece of testable code first undergoes the scrupulous punishment of a top notch QA.</p>
-                                                    <p style="text-indent: 5%;">After the few weeks of my internship, each Intern was placed on one of the Ship's several Development Teams. I personally had the pleasure of working with
-                                                     the proudly named "Moose & Squirrel"; a diverse group focussed on adding new features to the site that varied in age as well as expertise and skill.</p>
-                                                    <p>I'm happy to say that at uSip I was able to touch every layer of the stack, including...</p>
+                                                    <p style="text-indent: 5%;">Basically, if someone is in the Dev office, there is most likely fresh code being pushed up. 
+                                                     Even with the continuous integration, every piece of testable code first undergoes the scrupulous punishment of a top notch QA.</p>
+                                                    
+                                                    <p style="text-indent: 5%;">After the first few weeks of my internship, each Intern was placed on one of the Ship's several Development Teams. I personally had the pleasure of working with
+                                                     the proudly named "Moose & Squirrel"; a diverse group focussed on adding new features to the site that varied in age as well as expertise and skill.
+                                                    I am happy to say that at uShip I was able and in fact required to touch every single layer of the stack, including...</p>
 
                                                 </div>
                                                </div>
@@ -478,30 +504,46 @@
                                                             <br></br>
                                                            
                                                             <p><b>Projects:</b></p>
-                                                            <p><u>Mobile Smartbanner for android and IOS:</u></p>
+                                                            <p><u>Mobile Smartbanner for Android and IOS:</u></p>
                                                                 <p style="text-indent: 5%;">On this project, I got the opportunity to work alongside Moose & Squirrel’s UI wizard, 
                                                                 <a href="https://www.linkedin.com/profile/view?id=24916152&authType=NAME_SEARCH&authToken=rvqk&locale=en_US&trk=tyah2&trkInfo=tarId%3A1410893067426%2Ctas%3Abryson%2Cidx%3A1-1-1" target="_blank">Bryson Reynolds</a>,
                                                                 in an effort to increase mobile application adoption across uShip's user base. Together, he and I pulled the open sourced <a href="https://github.com/jasny/jquery.smartbanner" target="_blank">smartbanner.js</a> 
-                                                                project into our vast production solution. We then proceeded to gut, tweak, and perfect the associated jQuery and scss to our designers specifications. 
-                                                                MAS MAS MAS MAS
+                                                                project into our vast product solution. We then proceeded to gut, tweak, and perfect the associated javascript and scss to our designers specifications. 
+                                                                Once we had localized our uShip specific IOS and Android text into the DB, we made our initial launch of the banner to the mobile website. 
+                                                                </p>
+                                                                
+                                                                <p style="text-indent: 5%;">A few weeks later, after watching uShip application marketplace download rates almost double, we then integrated the smart banner into the site's main homepage.
+                                                                This made the smart banner appear to those mobile users who had defaulted to use the full website and one again increased download rates. If you're reading this from your phone, go ahead and 
+                                                                check out <a href="http://www.uship.com/" target="_blank"> uShip.com</a>. You see that banner at the top of your screen? That, in part, is a bit of my handy work.
                                                                 </p>
                                                             
                                                             <br></br>
                                                             
                                                             <p><u>Login Via Email:</u></p>
-                                                                <p style="text-indent: 5%;">Not truly logged in but a limited logged in view that required logging in with certain actions</p>
-                                                                <div>Pulled an encoder into the solution and worked on a token vendor</div>
-                                                                <div>Built a Selenium testing suite around the entire project to be ran during pushes</div>
-                                                            
+                                                                <p style="text-indent: 5%;">This was a fairly large and exciting project that took the entire Moose & Squirrel team, which at the time was one of the larger dev teams at uShip, multiple sprints to implement and launch. 
+                                                                We created a process that gave our users the experience of logging in by clicking a url from a uShip email. However, for obvious security reasons, we couldn't actually allow users to truly log into their accounts by simply 
+                                                                following a provided link to uShip.com. Instead, we created a limited logged in perspective of the user's view of the site. Then, if the user wanted to complete certain actions and view/edit sensitive user related profile information,
+                                                                password authentication was requested. Most of the credit for this clever design and its even more impressive implementation strategy goes to the all to humble 
+                                                                <a href="https://www.linkedin.com/profile/view?id=13624560&authType=NAME_SEARCH&authToken=ISCx&locale=en_US&trk=tyah2&trkInfo=tarId%3A1410906555753%2Ctas%3Aed%20vin%2Cidx%3A1-1-1" >Ed Vinyard</a>.</p>
+                                                                
+                                                                <p style="text-indent: 5%;">As part of my contribution to the project, I worked with a team member to pull a token encoder into the product solution and added a encrypted token vendor service to the application layer.
+                                                                For security reasons, I'll restrain from giving too many details about said encoder and vending service.</p>
+                                                                
+                                                                <p style="text-indent: 5%;">One of my largest contributions to the project was the <a href="http://www.seleniumhq.org/" target="_blank">Selenium Testing Suite</a> that I built around our new product feature.
+                                                                This involved working within uShip's automated testing infrastructure and adding features that tested our product solution for the project's required functionality. 
+                                                                It also involved adding several testing functions to that infrastructure's libraries as well as improving a couple of pre-existing functions.
+                                                                Finally, the suite was added to uShip's core testing bundle to be ran over each developer's solution during pushes to production.</p>
+                                                          
                                                             <br></br>
                                                             
                                                              <p><u>Answer Question Via Email:</u></p>
-                                                                <p style="text-indent: 5%;">Intern project routed emails through mail-gun</p>
-                                                                <div>I personally worked on the graphite logging system</div>                                                            
+                                                                <p style="text-indent: 5%;">This was my first project to work on at the Ship and was an Intern group effort. This feature allowed users to carry out in site conversations via email. We 
+                                                                routed the emails through a third party to ease the incoming mail load on our database and updated the correlating user's profiles as they communicated with one another. I worked on adding 
+                                                                real-time system monitoring via logging calls on outbound and inbound emails.</p>                                                            
                                                             
                                                             <br></br>
                                                             
-                                                            <p>Fixed Defects, Blockers, and Bugs</p>
+                                                            <p style="text-indent: 5%;">And of course, as every developer does, I spent plenty of time fixing defects, routing out blockers, and squashing bugs.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -531,28 +573,42 @@
                                                     <!--Home Depot Pic-->
                                                 </div>
 
-                                                <div class="span6 offset1" style="margin-top: 10%; margin-bottom: 8%;">
+                                                <div class="span6 offset1" style="margin-top: 10%;">
 
-                                                    <p>Worked with the incedent Management team</p>
-                                                    <p>Wrote a web application ontop of Service Now internal mgmt system</p>
-                                                    <p>Used java script, Ajax, html, and css</p>
-                                                    <p>The application...</p>
+                                                     <p style="text-indent: 5%;">At THD, I had a couple of roles. One of which was to aid in the construction and maintenance of 
+                                                     the IT department's record keeping and service automation infrastructure. I developed on top of a web based enterprise IT solution platform called 
+                                                    <a href="http://www.servicenow.com/content/dam/servicenow/other-documents/ebook/index.html" target="_blank">Service Now</a>. 
+                                                    In my other role, I got to work with the Incident Management Team; an energetic group that networked with and assembled various technical teams during system outages.
+                                                    </p>
+                                                    
+                                                </div>
+                                                <div class="span10 offset1">
+                                                    
+                                                     <p style="text-indent: 5%;"> During my Internship, I built an 
+                                                    application that aided Incident Managers with personnel allocation and organisation during system outages.
+                                                    The application...</p>
 
                                                 </div>
                                                 </div>
 
 
                                                 <div class="row-fluid">
-                                                    <div class="span11 offset1" style="margin-bottom: 8%;">
+                                                    <div class="span11 offset1">
                                                         <div id="collapseTwo" class="collapse">
-                                                            kept track of on call incedent response teams and their members An Incedent Manager could select a team member and assign them to the current incendent The application would send out an invitation email to said team member The team member could then reply to that email to indicate their acceptance to the invitation After the invitation is sent out, the team member was thrown into a running que that kept track of all invited team members and their current status within the incident (invited, accepted, joined, dismissed, re-joined ect.) This running que was visible to the Incident manager via thee ui Each incident is represented in a DB form that held all of the Incident's metrics The queue and all of its activity was saved to an Icident Resonse DB form for later analitics
-                                                        </div>
+                                                            <p style="text-indent: 5%;">Kept track of technical teams and their individual members that were  on call for incident response. From within the application, the Incident Manger could select a team member and assign
+                                                             them to the current indecent. An Incident Form was stored on a DB and included all of the meta-data that corresponded to the event.</p>
+                                                             
+                                                             <p style="text-indent: 5%;">After the on call team member was selected, application would send out an invitation email to said team member. 
+                                                             The team member could then reply to that email to indicate their acceptance to the invitation. After the invitation is sent out, the team member's name, status, contact information, and response time was
+                                                              thrown into a running queue that tracked of all invited teams and members involved in the event. </p>
+                                                              
+                                                              <p style="text-indent: 5%;">This running queue was visible to the Incident manager via the application's ui and was also stored on the DB and was tied to the incident form for later analysis.</p>                                         </div>
                                                     </div>
                                                 </div>
 
 
                                             </div>
-                                            <div id="collapseOneExpand" class="collapseExpand" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                            <div id="collapseTwoExpand" class="collapseExpand" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                                             		<p class="thin"></p><p id="collapseTwoText">Click To Expand Section</p><p class="thin"></p>
                                             </div>
                                         </div>

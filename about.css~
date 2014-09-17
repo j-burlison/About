@@ -20,7 +20,7 @@ html, body {
 	float: left;
 }
 
-#thankYou {
+.thankYouOops {
 	 color: #707070;
     text-shadow: 5px 4px 0 #eee,7px 6px 0 #707070;
     font-size: 60px;
@@ -68,6 +68,7 @@ html, body {
 	background-size: cover;
 	text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
 	font-size: 130%;	
+	min-height: 10%;
 }
 
 .contact-text {
@@ -123,7 +124,7 @@ html, body {
 	box-shadow: inset 0px 0px 106px 20px rgba(0,0,0,0.75);
 }
 
-#collapseOneExpand {
+#collapseOneText, #collapseTwoText {
 	text-indent: 34%;
 }
 
@@ -198,4 +199,21 @@ progress[value]::-webkit-progress-value {
 
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+    z-index: 100;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
 }

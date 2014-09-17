@@ -3,8 +3,8 @@
 $mailto = 'josh1burlison@gmail.com' ;
 $subject = "Contact Form from Joshua Burlison Website" ;
 $formurl = "http://www.jburlison.com/" ;
-$thankyouurl = "http://www.jburlison.com/" ;
-$errorurl = "http://www.jburlison.com/" ;
+$thankyouurl = "http://www.jburlison.com/#thankYou" ;
+$errorurl = "http://www.jburlison.com/#Oops" ;
 
 $email_is_required = 1;
 $name_is_required = 1;
